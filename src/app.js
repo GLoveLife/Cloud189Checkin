@@ -198,6 +198,8 @@ async function main() {
     const { userName, password } = account;
     logger.log(`${userName}开始执行`);
     logger.log(`${password}开始执行`);
+    logger.log(userName);
+    logger.log(password);
     if (userName && password) {
       
       const userNameInfo = mask(userName, 3, 7);
