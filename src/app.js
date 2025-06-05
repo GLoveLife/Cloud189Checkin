@@ -206,7 +206,7 @@ async function main() {
       try {
         logger.log(`账户 ${userNameInfo}开始执行`);
         
-        const cloudClient = new CloudClient(userName, password);
+        const cloudClient = new CloudClient(userName,password);
         await cloudClient.login();
         const result = await doTask(cloudClient);
         result.forEach((r) => logger.log(r));
